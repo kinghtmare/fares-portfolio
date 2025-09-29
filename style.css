@@ -192,6 +192,421 @@ footer:hover {
   color: #ff3333;
 }
 
+/* Technical Report Styling */
+.technical-report {
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.technical-report:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-left-width: 6px;
+}
+
+.technical-report h2 {
+  text-align: center;
+  color: #ff4444;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.technical-report h2:hover {
+  border-bottom-color: #ff3333;
+}
+
+.technical-report h3 {
+  color: #ff5555;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ff3333;
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.technical-report h3:hover {
+  border-left-width: 6px;
+  padding-left: 1.2rem;
+}
+
+.technical-report h4 {
+  color: #ff6666;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.technical-report h4:hover {
+  color: #ff4444;
+  transform: translateX(5px);
+}
+
+.technical-report h5 {
+  color: #ff7777;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Image Gallery Styling with Hover Effects */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.report-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.report-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* Component Styling */
+.component {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.component:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.component-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.component-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.component-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+.component-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Sensor Comparison */
+.sensor-comparison {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.sensor-config {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.sensor-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sensor-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* PCB Styling */
+.pcb-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.pcb-section:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.pcb-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.pcb-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pcb-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+.components-list ul {
+  columns: 2;
+  column-gap: 2rem;
+  list-style-type: none;
+}
+
+.components-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.components-list li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.components-list li:before {
+  content: "•";
+  color: #ff3333;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Mechanical Design Styling */
+.design-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.design-section:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.design-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.design-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.design-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.design-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+.design-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.materials ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.materials li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.materials li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.materials li:before {
+  content: "•";
+  color: #ff3333;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Software Styling */
+.software-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.software-section:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.code-images,
+.final-code-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.code-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.code-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+.code-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.code-snippet {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.code-snippet:hover {
+  border-left-width: 6px;
+  transform: translateY(-3px);
+}
+
+.code-snippet code {
+  display: block;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  margin: 0.5rem 0;
+  overflow-x: auto;
+  transition: all 0.3s ease;
+}
+
+.code-snippet code:hover {
+  background-color: #333333;
+  box-shadow: 0 3px 10px rgba(255, 50, 50, 0.2);
+}
+
+/* Core Values Styling */
+.core-values {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.core-values:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.team-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.team-photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-photo:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .profile-img {
     width: 150px;
@@ -206,5 +621,28 @@ footer:hover {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+  }
+
+  .components-list ul {
+    columns: 1;
+  }
+
+  .design-content,
+  .component-content {
+    flex-direction: column;
+  }
+
+  .design-images,
+  .design-description {
+    width: 100%;
+  }
+
+  .report-image,
+  .component-image,
+  .pcb-image,
+  .design-image,
+  .code-image,
+  .team-photo {
+    max-width: 100%;
   }
 }
