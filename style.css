@@ -192,7 +192,7 @@ footer:hover {
   color: #ff3333;
 }
 
-/* Technical Report Styling - UPDATED TO MATCH YOUR HTML */
+/* Technical Report Styling */
 .technical-report {
   margin-top: 2rem;
   background-color: #1e1e1e;
@@ -254,50 +254,7 @@ footer:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Match the actual HTML structure */
-.team-section,
-.abstract,
-.hardware,
-.schematics,
-.mechanical-design,
-.software,
-.core-values {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: #252525;
-  border-radius: 8px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
-}
-
-.team-section:hover,
-.abstract:hover,
-.hardware:hover,
-.schematics:hover,
-.mechanical-design:hover,
-.software:hover,
-.core-values:hover {
-  border-color: #ff3333;
-  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
-}
-
-/* Image styling for ALL images in technical report */
-.technical-report img {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  max-width: 100%;
-  height: auto;
-}
-
-.technical-report img:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
-}
-
-/* Specific image containers */
+/* Image Gallery Styling with Hover Effects */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -306,17 +263,34 @@ footer:hover {
   justify-content: center;
 }
 
-/* Component sections within hardware */
-.hardware > .component {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: #2a2a2a;
+.report-image {
+  max-width: 300px;
+  height: auto;
   border-radius: 8px;
-  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.hardware > .component:hover {
+.report-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* Component Styling */
+.component {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #252525;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.component:hover {
   border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .component-content {
@@ -324,7 +298,21 @@ footer:hover {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: flex-start;
-  margin-top: 1rem;
+}
+
+.component-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.component-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
 
 .component-details {
@@ -332,7 +320,186 @@ footer:hover {
   min-width: 300px;
 }
 
-/* Sensor comparison */
+/* Hardware Overview Styling */
+.hardware-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.hardware-point {
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.hardware-point:hover {
+  border-left-width: 6px;
+  transform: translateX(5px);
+  background-color: #2d2d2d;
+}
+
+.hardware-point h4 {
+  color: #ff6666;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Mechanical Process Styling */
+.mechanical-process {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.process-step {
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  border-color: #ff3333;
+  transform: translateY(-3px);
+}
+
+.process-step h4 {
+  color: #ff6666;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.process-step ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.process-step li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.process-step li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.process-step li:before {
+  content: "•";
+  color: #ff3333;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Software Functions Styling */
+.software-functions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.function-category {
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.function-category:hover {
+  border-color: #ff3333;
+  transform: translateY(-3px);
+}
+
+.function-category h4 {
+  color: #ff6666;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.function-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.function-category li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.function-category li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.function-category li:before {
+  content: "🎯";
+  position: absolute;
+  left: 0;
+}
+
+.function-category li strong {
+  color: #ff5555;
+}
+
+/* Team Love Styling */
+.team-love {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.love-point {
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.love-point:hover {
+  border-left-width: 6px;
+  transform: translateX(5px);
+  background-color: #2d2d2d;
+}
+
+.love-point h4 {
+  color: #ff6666;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-quote {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #ff3333;
+  text-align: center;
+  font-style: italic;
+}
+
+.team-quote p {
+  margin: 0;
+  color: #ff9999;
+}
+
+/* Sensor Comparison */
 .sensor-comparison {
   display: flex;
   flex-wrap: wrap;
@@ -346,17 +513,34 @@ footer:hover {
   text-align: center;
 }
 
-/* PCB sections */
+.sensor-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sensor-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* PCB Styling */
 .pcb-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #2a2a2a;
+  background-color: #252525;
   border-radius: 8px;
-  border: 1px solid #444;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
 }
 
 .pcb-section:hover {
   border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .pcb-images {
@@ -365,6 +549,21 @@ footer:hover {
   gap: 1rem;
   margin: 1rem 0;
   justify-content: center;
+}
+
+.pcb-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pcb-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
 
 .components-list ul {
@@ -394,17 +593,19 @@ footer:hover {
   left: 0;
 }
 
-/* Mechanical design sections */
+/* Mechanical Design Styling */
 .design-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #2a2a2a;
+  background-color: #252525;
   border-radius: 8px;
-  border: 1px solid #444;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
 }
 
 .design-section:hover {
   border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .design-content {
@@ -420,6 +621,21 @@ footer:hover {
   gap: 1rem;
   flex: 1;
   min-width: 300px;
+}
+
+.design-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.design-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
 
 .design-description {
@@ -453,17 +669,19 @@ footer:hover {
   left: 0;
 }
 
-/* Software sections */
+/* Software Styling */
 .software-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #2a2a2a;
+  background-color: #252525;
   border-radius: 8px;
-  border: 1px solid #444;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
 }
 
 .software-section:hover {
   border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .code-images, .final-code-images {
@@ -472,6 +690,21 @@ footer:hover {
   gap: 1rem;
   margin: 1rem 0;
   justify-content: center;
+}
+
+.code-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.code-image:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
 
 .code-examples {
@@ -513,13 +746,28 @@ footer:hover {
   box-shadow: 0 3px 10px rgba(255, 50, 50, 0.2);
 }
 
-/* Team photos */
+/* Core Values Styling */
 .team-photos {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1.5rem 0;
   justify-content: center;
+}
+
+.team-photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-photo:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
 
 /* Lists styling */
@@ -584,5 +832,9 @@ footer:hover {
   
   .code-images, .final-code-images, .pcb-images, .design-images, .team-photos {
     justify-content: center;
+  }
+  
+  .hardware-point, .love-point, .process-step, .function-category {
+    padding: 1rem;
   }
 }
