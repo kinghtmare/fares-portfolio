@@ -192,7 +192,7 @@ footer:hover {
   color: #ff3333;
 }
 
-/* Technical Report Styling */
+/* Technical Report Styling - UPDATED TO MATCH YOUR HTML */
 .technical-report {
   margin-top: 2rem;
   background-color: #1e1e1e;
@@ -254,32 +254,14 @@ footer:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Image Gallery Styling with Hover Effects */
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1.5rem 0;
-  justify-content: center;
-}
-
-.report-image {
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.report-image:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
-}
-
-/* Component Styling */
-.component {
+/* Match the actual HTML structure */
+.team-section,
+.abstract,
+.hardware,
+.schematics,
+.mechanical-design,
+.software,
+.core-values {
   margin-bottom: 2rem;
   padding: 1.5rem;
   background-color: #252525;
@@ -288,9 +270,53 @@ footer:hover {
   transition: all 0.3s ease;
 }
 
-.component:hover {
+.team-section:hover,
+.abstract:hover,
+.hardware:hover,
+.schematics:hover,
+.mechanical-design:hover,
+.software:hover,
+.core-values:hover {
   border-color: #ff3333;
   box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+/* Image styling for ALL images in technical report */
+.technical-report img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
+  border: 2px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 100%;
+  height: auto;
+}
+
+.technical-report img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
+}
+
+/* Specific image containers */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+/* Component sections within hardware */
+.hardware > .component {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.hardware > .component:hover {
+  border-color: #ff3333;
 }
 
 .component-content {
@@ -298,21 +324,7 @@ footer:hover {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: flex-start;
-}
-
-.component-image {
-  max-width: 200px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.component-image:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
+  margin-top: 1rem;
 }
 
 .component-details {
@@ -320,7 +332,7 @@ footer:hover {
   min-width: 300px;
 }
 
-/* Sensor Comparison */
+/* Sensor comparison */
 .sensor-comparison {
   display: flex;
   flex-wrap: wrap;
@@ -334,34 +346,17 @@ footer:hover {
   text-align: center;
 }
 
-.sensor-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.sensor-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
-}
-
-/* PCB Styling */
+/* PCB sections */
 .pcb-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #252525;
+  background-color: #2a2a2a;
   border-radius: 8px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
+  border: 1px solid #444;
 }
 
 .pcb-section:hover {
   border-color: #ff3333;
-  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .pcb-images {
@@ -370,21 +365,6 @@ footer:hover {
   gap: 1rem;
   margin: 1rem 0;
   justify-content: center;
-}
-
-.pcb-image {
-  max-width: 250px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.pcb-image:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
 }
 
 .components-list ul {
@@ -414,19 +394,17 @@ footer:hover {
   left: 0;
 }
 
-/* Mechanical Design Styling */
+/* Mechanical design sections */
 .design-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #252525;
+  background-color: #2a2a2a;
   border-radius: 8px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
+  border: 1px solid #444;
 }
 
 .design-section:hover {
   border-color: #ff3333;
-  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
 .design-content {
@@ -442,21 +420,6 @@ footer:hover {
   gap: 1rem;
   flex: 1;
   min-width: 300px;
-}
-
-.design-image {
-  max-width: 250px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.design-image:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
 }
 
 .design-description {
@@ -490,43 +453,25 @@ footer:hover {
   left: 0;
 }
 
-/* Software Styling */
+/* Software sections */
 .software-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #252525;
+  background-color: #2a2a2a;
   border-radius: 8px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
+  border: 1px solid #444;
 }
 
 .software-section:hover {
   border-color: #ff3333;
-  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
-.code-images,
-.final-code-images {
+.code-images, .final-code-images {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0;
   justify-content: center;
-}
-
-.code-image {
-  max-width: 300px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.code-image:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 6px 20px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
 }
 
 .code-examples {
@@ -568,21 +513,7 @@ footer:hover {
   box-shadow: 0 3px 10px rgba(255, 50, 50, 0.2);
 }
 
-/* Core Values Styling */
-.core-values {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #252525;
-  border-radius: 8px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
-}
-
-.core-values:hover {
-  border-color: #ff3333;
-  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
-}
-
+/* Team photos */
 .team-photos {
   display: flex;
   flex-wrap: wrap;
@@ -591,19 +522,31 @@ footer:hover {
   justify-content: center;
 }
 
-.team-photo {
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 50, 50, 0.2);
-  border: 2px solid #333;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/* Lists styling */
+.technical-report ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
 }
 
-.team-photo:hover {
-  transform: scale(1.1) rotate(2deg);
-  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.4);
-  border-color: #ff5555;
+.technical-report li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.technical-report li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.technical-report li:before {
+  content: "•";
+  color: #ff3333;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 /* Responsive Design */
@@ -627,22 +570,19 @@ footer:hover {
     columns: 1;
   }
 
-  .design-content,
-  .component-content {
+  .design-content, .component-content {
     flex-direction: column;
   }
 
-  .design-images,
-  .design-description {
+  .design-images, .design-description {
     width: 100%;
   }
 
-  .report-image,
-  .component-image,
-  .pcb-image,
-  .design-image,
-  .code-image,
-  .team-photo {
+  .technical-report img {
     max-width: 100%;
+  }
+  
+  .code-images, .final-code-images, .pcb-images, .design-images, .team-photos {
+    justify-content: center;
   }
 }
